@@ -1,0 +1,6 @@
+{{#each shoppingCart.items as |item|}}
+  {{item.title}} -- {{item.cost}}
+{{/each}}
+<button {{action 'removeAll'}}>Remove All from Cart</button>
+<!-- <button {{action 'totalCost'}}>Total cost  of items in the cart</button> -->
+total:<button {{action 'totalCostShoppingCart'}}>cost</button>
