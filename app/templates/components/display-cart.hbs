@@ -1,5 +1,9 @@
+<h2>Shopping Cart </h2>
 {{#each shoppingCart.items as |item|}}
-  {{item.title}} -- {{item.cost}}
+  <li>{{item.title}} -- {{item.cost}}</li>
 {{/each}}
-<button {{action 'removeAll'}}>Remove All from Cart</button>
-total is:{{totalCostShoppingCart}}
+<hr>
+<button class="btn btn-danger center-block" {{action 'removeAll'}}>Remove All from Cart</button>
+<h2>
+    total is:{{totalCostShoppingCart}}
+</h2>
